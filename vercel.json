@@ -1,0 +1,11 @@
+{
+  "framework": null,
+  "buildCommand": "vinxi build",
+  "outputDirectory": ".output/public",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/server" }],
+  "functions": {
+    "api/server.js": {
+      "includeFiles": ".output/**"
+    }
+  }
+}
